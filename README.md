@@ -1,5 +1,6 @@
-Git Book
+Git Persian Guide
 =====
-A little book on Git in farsi.
 
-*in development*
+A little book on Git in Persian.
+
+[Online](http://git.coderz.ir)
