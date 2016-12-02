@@ -25,43 +25,43 @@
   
 نصب روی جنتو :
 
-```
-emerge --ask --verbose dev-vcs/git
-```
+.. code-block:: bash
+  emerge --ask --verbose dev-vcs/git
+
 
 نصب روی آرچ‌لینوکس :
 
-```
-pacman -S git
-```
+.. code-block:: bash
+  pacman -S git
+
 
 نصب روی اوپن‌زوزه :
 
-```
-zypper install git
-```
+.. code-block:: bash
+  zypper install git
+
 
 
 نصب روی فدورا (تا نسخه‌ی ۲۱):
 
-```
-yum install git
-```
+.. code-block:: bash
+  yum install git
+
 
 نصب روی فدورا( نسخه‌ی ۲۲ و بالاتر) :
 
-```
-dnf install git
-```
+.. code-block:: bash
+  dnf install git
+
 
 نصب روی mac os
 ----
 
 نصب روی osx با پکیج منیجر هوم برو :
 
-```
-brew install git
-```
+.. code-block:: bash
+  brew install git
+
 
 نصب روی ویندوز
 ----
