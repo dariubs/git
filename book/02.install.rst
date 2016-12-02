@@ -26,18 +26,21 @@
 نصب روی جنتو :
 
 .. code-block:: bash
+
   emerge --ask --verbose dev-vcs/git
 
 
 نصب روی آرچ‌لینوکس :
 
 .. code-block:: bash
+
   pacman -S git
 
 
 نصب روی اوپن‌زوزه :
 
 .. code-block:: bash
+
   zypper install git
 
 
@@ -45,12 +48,14 @@
 نصب روی فدورا (تا نسخه‌ی ۲۱):
 
 .. code-block:: bash
+
   yum install git
 
 
 نصب روی فدورا( نسخه‌ی ۲۲ و بالاتر) :
 
 .. code-block:: bash
+
   dnf install git
 
 
@@ -60,6 +65,7 @@
 نصب روی osx با پکیج منیجر هوم برو :
 
 .. code-block:: bash
+
   brew install git
 
 
