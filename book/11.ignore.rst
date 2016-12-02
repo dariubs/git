@@ -6,6 +6,7 @@ ignore
 برای مثال لیست زیر:
 
 .. code-block:: Plain
+
   # Distribution / packaging
   .Python
   env/

@@ -4,4 +4,5 @@
 برای آن‌استیج کردن فایل‌ها از دستور زیر استفاده کنید:
 
 .. code-block:: bash
+
   git reset HEAD <file-name>

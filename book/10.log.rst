@@ -5,6 +5,7 @@
 
 شکل کلی این دستور بصورت زیر است:
 .. code-block:: bash
+
   git log
 
 
@@ -13,6 +14,7 @@
 می‌توانید کامیت‌های یک برنچ مشخص را نیز بصورت جداگانه با مشخص‌کردن نام برنچ ببینید:
 
 .. code-block:: bash
+
   git log نام‌برنچ
 
 
@@ -32,4 +34,5 @@
 برای نمایش خلاصه و منظم لاگ ها هم میتوانید از دستور زیر استفاده کنید :
 
 .. code-block:: bash
+
   git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
