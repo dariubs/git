@@ -10,7 +10,7 @@
 ===========
 
 :نوشته شده توسط:
-  `داریوش عباسی <https://dariubs.github.io/>`_
+  `داریوش عباسی <https://dariush.in/>`_
   و
   `مشارکت کنندگان آزاد
   <https://github.com/dariubs/git/graphs/contributors>`_.
