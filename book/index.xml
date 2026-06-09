@@ -14,7 +14,15 @@
 &lt;h2 id="تنظیمات-اساسی"&gt;تنظیمات اساسی&lt;/h2&gt;
 &lt;p&gt;برای اضافه کردن نام خود:&lt;/p&gt;</description></item><item><title>شروع یک پروژه با گیت</title><link>https://dariubs.github.io/git/book/04.init/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/04.init/</guid><description>&lt;p&gt;دایرکتوری پروژه‌هایی که از سیستم‌های مدیریت کد منبع مثل گیت استفاده می‌کنند، با عنوان یک &lt;strong&gt;repository&lt;/strong&gt; (در اصطلاح عامیانه ریپو، گاهی در فارسی مخزن) می‌خوانند.&lt;/p&gt;
 &lt;p&gt;دستور &lt;code&gt;git init&lt;/code&gt; یک مخزن جدید گیت ایجاد می‌کند. با اجرای این دستور یک دایرکتوری با نام &lt;code&gt;.git/&lt;/code&gt; درون دایرکتوری حاضر شما ایجاد می‌شود که حاوی فایل‌های کانفیگ و بلاب‌های تغییرات ثبت شده توسط گیت است.&lt;/p&gt;
-&lt;p&gt;برای اضافه کردن گیت به یک پروژه‌ی موجود، داخل دایرکتوری پروژه دستور زیر را وارد کنید:&lt;/p&gt;</description></item><item><title>وضعیت مخزن</title><link>https://dariubs.github.io/git/book/05.status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/05.status/</guid><description>&lt;p&gt;یکی از اساسی‌ترین کارهایی که با گیت می‌کنیم بررسی و ثبت تغییرات ایجاد شده در فایل‌های متنی پروژه است.&lt;/p&gt;
+&lt;p&gt;برای اضافه کردن گیت به یک پروژه‌ی موجود، داخل دایرکتوری پروژه دستور زیر را وارد کنید:&lt;/p&gt;</description></item><item><title>کلون‌کردن یک مخزن</title><link>https://dariubs.github.io/git/book/04b.clone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/04b.clone/</guid><description>&lt;p&gt;علاوه بر ساختن یک مخزن جدید با &lt;code&gt;git init&lt;/code&gt;، می‌توانید یک مخزن موجود را از اینترنت یا سرور دیگری روی سیستم خود دریافت کنید. این کار را &lt;strong&gt;کلون‌کردن&lt;/strong&gt; می‌نامیم.&lt;/p&gt;
+&lt;p&gt;دستور &lt;code&gt;git clone&lt;/code&gt; تمام تاریخچه‌ی کامیت‌ها، برنچ‌ها و فایل‌های یک مخزن را دانلود می‌کند.&lt;/p&gt;
+&lt;h2 id="کلون-ساده"&gt;کلون ساده&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone آدرس‌مخزن
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;این دستور مخزن را در یک دایرکتوری جدید با نام مخزن می‌سازد. برای مثال:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/torvalds/linux.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="کلون-در-یک-دایرکتوری-مشخص"&gt;کلون در یک دایرکتوری مشخص&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone آدرس‌مخزن نام‌دایرکتوری
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;برای مثال:&lt;/p&gt;</description></item><item><title>وضعیت مخزن</title><link>https://dariubs.github.io/git/book/05.status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/05.status/</guid><description>&lt;p&gt;یکی از اساسی‌ترین کارهایی که با گیت می‌کنیم بررسی و ثبت تغییرات ایجاد شده در فایل‌های متنی پروژه است.&lt;/p&gt;
 &lt;p&gt;هر زمان که تغییرات ثبت‌نشده‌ی پروژه را مایل بودید بررسی کنید، دستور زیر را وارد کنید:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git status
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;این دستور فایل‌هایی که تغییر داده‌اید را برای شما لیست می‌کند. تغییرات شامل: ویرایش یک فایل، اضافه کردن فایل جدید یا حذف یک فایل و همچنین فایل‌های استیج‌شده یا استیج‌نشده می‌شود.&lt;/p&gt;
@@ -33,12 +41,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;با اجرای این دستور ویرایشگر فایل شما باز شده و می‌توانید پیام خود را در آن بنویسید.&lt;/p&gt;</description></item><item><title>حذف فایل‌ها</title><link>https://dariubs.github.io/git/book/08.rm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/08.rm/</guid><description>&lt;p&gt;اگر پس از ثبت یک فایل آن فایل را حذف کنیم، برای اضافه کردن تغییرات فایل حذف‌شده، دیگر امکان استفاده از &lt;code&gt;add&lt;/code&gt; را نداریم و باید با دستور &lt;code&gt;rm&lt;/code&gt; آن فایل را حذف کنیم:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git rm فایل۱ فایل۲ فایل۳
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;دقت داشته باشید برخلاف دستور &lt;code&gt;add&lt;/code&gt;، استفاده از &lt;code&gt;git rm .&lt;/code&gt; تمام فایل‌های پروژه را حذف می‌کند؛ پس از آن استفاده نکنید. :)&lt;/p&gt;
-&lt;p&gt;اگر اشتباهاً فایل‌های زیادی را دستی پاک کردیم بدون اینکه از دستور &lt;code&gt;git rm&lt;/code&gt; استفاده کنیم، می‌توانیم از دستور زیر استفاده کنیم:&lt;/p&gt;</description></item><item><title>مقایسه‌ی تغییرات</title><link>https://dariubs.github.io/git/book/09.diff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/09.diff/</guid><description>&lt;p&gt;برای بررسی تغییرات صورت گرفته در چند کامیت یا تغییرات کامیت‌نشده در مقابل تغییرات کامیت‌شده از دستور &lt;code&gt;diff&lt;/code&gt; استفاده می‌کنیم.&lt;/p&gt;
-&lt;p&gt;حالت ساده‌ی استفاده:&lt;/p&gt;
+&lt;p&gt;اگر اشتباهاً فایل‌های زیادی را دستی پاک کردیم بدون اینکه از دستور &lt;code&gt;git rm&lt;/code&gt; استفاده کنیم، می‌توانیم از دستور زیر استفاده کنیم:&lt;/p&gt;</description></item><item><title>مقایسه‌ی تغییرات</title><link>https://dariubs.github.io/git/book/09.diff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/09.diff/</guid><description>&lt;p&gt;برای بررسی تغییرات صورت گرفته در فایل‌ها از دستور &lt;code&gt;diff&lt;/code&gt; استفاده می‌کنیم. این دستور خطوطی که حذف شده‌اند را با علامت &lt;code&gt;-&lt;/code&gt; و خطوط جدید را با علامت &lt;code&gt;+&lt;/code&gt; نشان می‌دهد.&lt;/p&gt;
+&lt;h2 id="تغییرات-ثبتنشده"&gt;تغییرات ثبت‌نشده&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git diff
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;که این دستور تغییرات کامیت‌نشده‌ی تمام فایل‌ها را به شما نشان می‌دهد. همچنین به‌صورت زیر می‌توانید تغییرات یک فایل خاص را نیز ببینید:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;این دستور تغییراتی را نشان می‌دهد که هنوز با &lt;code&gt;git add&lt;/code&gt; استیج نشده‌اند.&lt;/p&gt;
+&lt;p&gt;برای تغییرات یک فایل خاص:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git diff نام‌فایل
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>لاگ</title><link>https://dariubs.github.io/git/book/10.log/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/10.log/</guid><description>&lt;p&gt;برای نمایش لیست کامیت‌ها از دستور &lt;code&gt;log&lt;/code&gt; استفاده می‌کنیم. با این دستور می‌توان لیست کامیت‌های یک برنچ خاص، یا تمامی برنچ‌ها یا مقایسه‌ی بین برنچ‌ها را دید.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="تغییرات-استیجشده"&gt;تغییرات استیج‌شده&lt;/h2&gt;
+&lt;p&gt;برای دیدن تغییراتی که با &lt;code&gt;git add&lt;/code&gt; استیج شده‌اند اما هنوز کامیت نشده‌اند:&lt;/p&gt;</description></item><item><title>لاگ</title><link>https://dariubs.github.io/git/book/10.log/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/10.log/</guid><description>&lt;p&gt;برای نمایش لیست کامیت‌ها از دستور &lt;code&gt;log&lt;/code&gt; استفاده می‌کنیم. با این دستور می‌توان لیست کامیت‌های یک برنچ خاص، یا تمامی برنچ‌ها یا مقایسه‌ی بین برنچ‌ها را دید.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git log
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;که لیستی از تمام کامیت‌ها را به شما نمایش می‌دهد.&lt;/p&gt;
 &lt;p&gt;می‌توانید کامیت‌های یک برنچ مشخص را نیز بصورت جداگانه ببینید:&lt;/p&gt;
@@ -50,39 +60,89 @@
 &lt;li&gt;از &lt;code&gt;--merges&lt;/code&gt; برای نمایش کامیت‌هایی که در ادغام برنچ‌ها ثبت شده‌اند استفاده می‌کنیم.&lt;/li&gt;
 &lt;li&gt;از &lt;code&gt;--oneline&lt;/code&gt; برای نمایش هر کامیت در یک خط استفاده می‌کنیم.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;توضیحات بیشتر: &lt;code&gt;git log --help&lt;/code&gt;&lt;/p&gt;</description></item><item><title>ignore</title><link>https://dariubs.github.io/git/book/11.ignore/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/11.ignore/</guid><description>&lt;p&gt;ممکن است در دایرکتوری پروژه فایل‌هایی داشته باشید که نخواهید گیت آن‌ها را در وضعیت نشان دهد و نخواهید در مخزن اضافه شوند. برای این کار باید در دایرکتوری پروژه یک فایل به نام &lt;code&gt;.gitignore&lt;/code&gt; بسازید و در آن لیست فایل‌ها و دایرکتوری‌هایی را که گیت باید نادیده بگیرد بنویسید.&lt;/p&gt;
-&lt;p&gt;برای مثال:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;# Distribution / packaging
-.Python
-env/
+&lt;p&gt;توضیحات بیشتر: &lt;code&gt;git log --help&lt;/code&gt;&lt;/p&gt;</description></item><item><title>نادیده‌گرفتن فایل‌ها</title><link>https://dariubs.github.io/git/book/11.ignore/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/11.ignore/</guid><description>&lt;p&gt;ممکن است در دایرکتوری پروژه فایل‌هایی داشته باشید که نخواهید گیت آن‌ها را ردیابی کند؛ مثل فایل‌های تنظیمات محلی، وابستگی‌های نصب‌شده یا فایل‌های ساخته‌شده توسط کامپایلر. برای این کار باید در دایرکتوری پروژه یک فایل به نام &lt;code&gt;.gitignore&lt;/code&gt; بسازید.&lt;/p&gt;
+&lt;h2 id="ساختار-فایل-gitignore"&gt;ساختار فایل .gitignore&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# این خط کامنت است و نادیده گرفته می‌شود
+
+# نادیده‌گرفتن یک فایل خاص
+secret.txt
+
+# نادیده‌گرفتن تمام فایل‌های با پسوند .log
+*.log
+
+# نادیده‌گرفتن یک دایرکتوری
+node_modules/
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;لیستی از فایل‌ها و دایرکتوری‌هاست که گیت بعد از ساخته شدن فایل &lt;code&gt;.gitignore&lt;/code&gt; نادیده می‌گیرد.&lt;/p&gt;</description></item><item><title>برنچ‌ها</title><link>https://dariubs.github.io/git/book/12.branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/12.branch/</guid><description>&lt;p&gt;برنچ‌ها شاخه‌های مختلفی را برای توسعه ایجاد می‌کنند. فرض کنید در حال توسعه یک اپلیکیشن هستید و قصد دارید نسخه‌ی آینده را همزمان با نسخه‌ی فعلی توسعه دهید. اضافه کردن تمام این تغییرات با هم ممکن است مسبب شلوغی روند توسعه و تداخل فایل‌های هم‌نام شود.&lt;/p&gt;
-&lt;p&gt;با استفاده از برنچ‌ها در گیت می‌توانید یک مسیر جدید برای توسعه‌ی هر ویژگی ایجاد کنید. در گیت به‌طور پیش‌فرض برنچ اصلی به‌نام &lt;code&gt;master&lt;/code&gt; است.&lt;/p&gt;</description></item><item><title>ترکیب برنچ‌ها</title><link>https://dariubs.github.io/git/book/13.merge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/13.merge/</guid><description>&lt;p&gt;در بخش قبل نحوه‌ی استفاده از برنچ‌ها گفته شد. حال اگر بخواهیم این شاخه‌های جدا را دوباره با شاخه‌ی اصلی ترکیب کنیم، باید از دستور &lt;code&gt;merge&lt;/code&gt; استفاده کنیم:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git merge شاخه
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;با این دستور محتویات شاخه‌ی داده‌شده با شاخه‌ی فعلی ترکیب می‌شود.&lt;/p&gt;
-&lt;p&gt;در صورتی که بخواهیم تاریخچه‌ی کامیت‌های شاخه‌ی مورد نظر در شاخه‌ی اصلی وارد نشود، از گزینه‌ی &lt;code&gt;--squash&lt;/code&gt; استفاده می‌کنیم:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git merge &amp;lt;branch_name&amp;gt; --squash
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;در صورتی که عملیات مرج را روی فایل مشخصی اشتباه انجام دادید، برای گرداندن به وضعیت اول:&lt;/p&gt;</description></item><item><title>استفاده از ریموت</title><link>https://dariubs.github.io/git/book/14.remote/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/14.remote/</guid><description>&lt;p&gt;معمولاً پروژه‌هایی که چندین نفر روی آن کار می‌کنند مخزن اصلی را در یک سرور قرار می‌دهند و افراد همه‌ی تغییرات را روی آن مخزن اضافه می‌کنند.&lt;/p&gt;
-&lt;p&gt;می‌توانید از سرویس‌های اینترنتی مانند گیت‌هاب، بیت‌باکت و بسیاری سرویس‌های دیگر استفاده کنید.&lt;/p&gt;
+
+# نادیده‌گرفتن یک فایل در یک دایرکتوری مشخص
+config/database.yml
+
+# نادیده‌گرفتن تمام فایل‌های .txt در هر جای پروژه
+**/*.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="قوانین-الگو"&gt;قوانین الگو&lt;/h2&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;الگو&lt;/th&gt;
+					&lt;th&gt;توضیح&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;*.log&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;تمام فایل‌های با پسوند .log&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;build/&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;دایرکتوری build و تمام محتویات آن&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;doc/*.txt&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;فایل‌های .txt فقط در دایرکتوری doc&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;**/logs&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;دایرکتوری logs در هر جای پروژه&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;!important.log&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;این فایل را &lt;strong&gt;نادیده نگیر&lt;/strong&gt; (استثنا)&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="نمونه-برای-پروژههای-مختلف"&gt;نمونه برای پروژه‌های مختلف&lt;/h2&gt;
+&lt;p&gt;برای پروژه‌های Python:&lt;/p&gt;</description></item><item><title>برنچ‌ها</title><link>https://dariubs.github.io/git/book/12.branch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/12.branch/</guid><description>&lt;p&gt;برنچ‌ها شاخه‌های مختلفی برای توسعه ایجاد می‌کنند. فرض کنید در حال توسعه یک اپلیکیشن هستید و قصد دارید یک قابلیت جدید را بدون تأثیر روی کد اصلی آزمایش کنید. با استفاده از برنچ‌ها می‌توانید یک مسیر مجزا برای توسعه ایجاد کنید.&lt;/p&gt;
+&lt;p&gt;در گیت به‌طور پیش‌فرض برنچ اصلی &lt;code&gt;main&lt;/code&gt; یا &lt;code&gt;master&lt;/code&gt; نام دارد.&lt;/p&gt;
+&lt;h2 id="ساختن-برنچ"&gt;ساختن برنچ&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git branch نام‌برنچ
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="نمایش-لیست-برنچها"&gt;نمایش لیست برنچ‌ها&lt;/h2&gt;
+&lt;p&gt;برای نمایش برنچ‌های محلی:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git branch
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;برنچ فعلی با علامت &lt;code&gt;*&lt;/code&gt; مشخص می‌شود.&lt;/p&gt;</description></item><item><title>ترکیب برنچ‌ها</title><link>https://dariubs.github.io/git/book/13.merge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/13.merge/</guid><description>&lt;p&gt;وقتی کار روی یک برنچ تمام شد، باید تغییرات آن را به برنچ اصلی برگردانیم. این کار را با دستور &lt;code&gt;merge&lt;/code&gt; انجام می‌دهیم.&lt;/p&gt;
+&lt;h2 id="merge-ساده"&gt;merge ساده&lt;/h2&gt;
+&lt;p&gt;ابتدا به برنچی که می‌خواهید برنچ دیگر را در آن ادغام کنید بروید:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git switch main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;سپس برنچ مورد نظر را ادغام کنید:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git merge نام‌برنچ
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="fast-forward-در-مقابل-true-merge"&gt;Fast-forward در مقابل True Merge&lt;/h2&gt;
+&lt;p&gt;اگر از زمان انشعاب برنچ، هیچ تغییری روی برنچ اصلی نداده باشید، گیت یک &lt;strong&gt;fast-forward merge&lt;/strong&gt; انجام می‌دهد. در این حالت کامیت‌های برنچ مستقیماً به برنچ اصلی اضافه می‌شوند و کامیت merge جداگانه‌ای ساخته نمی‌شود.&lt;/p&gt;</description></item><item><title>استفاده از ریموت</title><link>https://dariubs.github.io/git/book/14.remote/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/14.remote/</guid><description>&lt;p&gt;معمولاً پروژه‌هایی که چندین نفر روی آن کار می‌کنند مخزن اصلی را در یک سرور قرار می‌دهند و افراد همه‌ی تغییرات را روی آن مخزن ارسال و دریافت می‌کنند.&lt;/p&gt;
+&lt;p&gt;می‌توانید از سرویس‌های اینترنتی مانند گیت‌هاب، گیت‌لب، بیت‌باکت و سرویس‌های دیگر استفاده کنید.&lt;/p&gt;
 &lt;h2 id="remote"&gt;remote&lt;/h2&gt;
-&lt;p&gt;برای نمایش، اضافه و حذف کردن تغییرات در یک مخزن ریموت از دستور &lt;code&gt;remote&lt;/code&gt; استفاده می‌شود.&lt;/p&gt;
+&lt;p&gt;برای نمایش، اضافه و حذف کردن مخازن ریموت از دستور &lt;code&gt;remote&lt;/code&gt; استفاده می‌شود.&lt;/p&gt;
 &lt;p&gt;برای نمایش لیستی از ریموت‌ها:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git remote
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;برای اضافه کردن یک مخزن ریموت:&lt;/p&gt;</description></item><item><title>بازگردانی تغییرات</title><link>https://dariubs.github.io/git/book/15.revert-changes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/15.revert-changes/</guid><description>&lt;p&gt;فایل‌ها در گیت تنها در دو حالت می‌توانند باشند: ثبت‌شده و ثبت‌نشده. تغییرات ثبت‌شده، تغییراتی است که پیش‌ازاین به گیت اضافه شده‌اند که می‌توانند تغییر نکرده، تغییر کرده یا آماده‌ی ثبت باشند و هر فایلی خارج ازین حالت‌ها به‌عنوان ثبت‌نشده در نظر گرفته می‌شود.&lt;/p&gt;
-&lt;h2 id="ریست-فایلهای-استیجشده"&gt;ریست فایل‌های استیج‌شده&lt;/h2&gt;
-&lt;p&gt;در حالتی که چند فایل تغییریافته را به مخزن &lt;code&gt;add&lt;/code&gt; یا &lt;code&gt;rm&lt;/code&gt; می‌کنیم، آن فایل‌ها به حالت استیج‌شده می‌روند. اگر بخواهیم یک فایل را از این حالت به حالت قبل خود برگردانیم از دستور زیر استفاده می‌کنیم:&lt;/p&gt;</description></item><item><title>سرویس‌های میزبانی مخازن گیت</title><link>https://dariubs.github.io/git/book/16.gitrepohosts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/16.gitrepohosts/</guid><description>&lt;p&gt;شما می‌توانید گیت سرور را در سرورهای خود راه‌اندازی کرده و پروژه‌های خود را مدیریت کنید اما سرویس‌های زیادی برای میزبانی مخازن گیت با امکاناتی بسیار ویژه وجود دارند.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;برای نمایش آدرس ریموت‌ها:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git remote -v
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;برای اضافه کردن یک مخزن ریموت:&lt;/p&gt;</description></item><item><title>بازگردانی تغییرات</title><link>https://dariubs.github.io/git/book/15.revert-changes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/15.revert-changes/</guid><description>&lt;p&gt;گیت روش‌های مختلفی برای بازگردانی تغییرات دارد. انتخاب روش درست به وضعیت فایل‌ها و هدف شما بستگی دارد.&lt;/p&gt;
+&lt;h2 id="بازگردانی-فایلهای-تغییریافته-هنوز-استیج-نشده"&gt;بازگردانی فایل‌های تغییریافته (هنوز استیج نشده)&lt;/h2&gt;
+&lt;p&gt;برای دورانداختن تغییرات یک فایل و برگرداندن آن به آخرین کامیت:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git restore نام‌فایل
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;یا با روش قدیمی‌تر:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout -- نام‌فایل
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;توجه:&lt;/strong&gt; این دستور تغییرات استیج‌نشده را برای همیشه از بین می‌برد.&lt;/p&gt;
+&lt;h2 id="خارجکردن-فایل-از-staging-unstage"&gt;خارج‌کردن فایل از staging (unstage)&lt;/h2&gt;
+&lt;p&gt;اگر فایلی را با &lt;code&gt;git add&lt;/code&gt; استیج کردید و می‌خواهید آن را از staging خارج کنید:&lt;/p&gt;</description></item><item><title>سرویس‌های میزبانی مخازن گیت</title><link>https://dariubs.github.io/git/book/16.gitrepohosts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/16.gitrepohosts/</guid><description>&lt;p&gt;شما می‌توانید گیت سرور را در سرورهای خود راه‌اندازی کرده و پروژه‌های خود را مدیریت کنید اما سرویس‌های زیادی برای میزبانی مخازن گیت با امکاناتی بسیار ویژه وجود دارند.&lt;/p&gt;
 &lt;p&gt;در این قسمت چند سرویس معروف و معتبر را بررسی می‌کنیم.&lt;/p&gt;
 &lt;h2 id="گیتهاب"&gt;گیت‌هاب&lt;/h2&gt;
 &lt;p&gt;گیت‌هاب معروف‌ترین سرویس میزبانی پروژه‌های گیت است که پروژه‌های بزرگ و معتبر زیادی مانند &lt;a href="https://github.com/torvalds/linux"&gt;کرنل لینوکس&lt;/a&gt;، &lt;a href="https://github.com/jquery/jquery"&gt;جی‌کوئری&lt;/a&gt; و &lt;a href="https://github.com/twbs/bootstrap"&gt;بوت‌استرپ&lt;/a&gt; روی آن توسعه داده می‌شوند.&lt;/p&gt;
@@ -96,8 +156,47 @@ var/
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git tag -d &amp;lt;tag_name&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;پس از اینکه تگ محلی پاک شد، می‌توانیم تگ را از روی مخزن origin پاک کنیم:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git push origin :tagname
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ترفندهای گیت</title><link>https://dariubs.github.io/git/book/18.tricks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/18.tricks/</guid><description>&lt;h2 id="آناستیج-کردن-فایلها"&gt;آن‌استیج کردن فایل‌ها&lt;/h2&gt;
-&lt;p&gt;برای آن‌استیج کردن فایل‌ها از دستور زیر استفاده کنید:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git reset HEAD &amp;lt;file-name&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ضمیمه ۱ — آشنایی با خط فرمان</title><link>https://dariubs.github.io/git/book/appendix01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/appendix01/</guid><description>&lt;p&gt;امروزه متداول‌ترین روش تعامل با سیستم‌عامل استفاده از واسط‌های گرافیکی است اما از ابتدای عصر کامپیوترهای دیجیتالی روش دیگری نیز بین کاربران متداول بود تحت عناوینی چون &amp;ldquo;محیط متنی&amp;rdquo; یا &amp;ldquo;واسط خط فرمان&amp;rdquo;. نرم‌افزارهای این محیط در سیستم‌های عامل مختلف با نام‌هایی چون ترمینال، کنسول، cmd، tty و&amp;hellip; خطاب می‌شوند.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>استش</title><link>https://dariubs.github.io/git/book/19.stash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/19.stash/</guid><description>&lt;p&gt;گاهی در حین کار روی یک برنچ نیاز دارید به سرعت به برنچ دیگری بروید، اما تغییرات فعلی هنوز آماده‌ی کامیت نیستند. دستور &lt;code&gt;stash&lt;/code&gt; تغییرات ناتمام را موقتاً کنار می‌گذارد تا بتوانید روی چیز دیگری کار کنید.&lt;/p&gt;
+&lt;h2 id="ذخیرهی-تغییرات-در-استش"&gt;ذخیره‌ی تغییرات در استش&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git stash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;این دستور تمام تغییرات استیج‌شده و استیج‌نشده را ذخیره می‌کند و پروژه را به وضعیت آخرین کامیت برمی‌گرداند.&lt;/p&gt;
+&lt;p&gt;برای ذخیره با یک پیام توضیحی:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git stash save &lt;span style="color:#f1fa8c"&gt;&amp;#34;پیام توضیحی&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="نمایش-لیست-استشها"&gt;نمایش لیست استش‌ها&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git stash list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;خروجی چیزی شبیه به این است:&lt;/p&gt;</description></item><item><title>ریبیس</title><link>https://dariubs.github.io/git/book/20.rebase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/20.rebase/</guid><description>&lt;p&gt;&lt;code&gt;rebase&lt;/code&gt; روشی دیگر برای ترکیب تغییرات دو برنچ است. برخلاف &lt;code&gt;merge&lt;/code&gt; که یک کامیت ادغام جدید می‌سازد، &lt;code&gt;rebase&lt;/code&gt; تاریخچه‌ی کامیت‌ها را بازنویسی می‌کند تا انگار از ابتدا روی برنچ مقصد کار کرده‌اید.&lt;/p&gt;
+&lt;h2 id="rebase-ساده"&gt;rebase ساده&lt;/h2&gt;
+&lt;p&gt;فرض کنید روی برنچ &lt;code&gt;feature&lt;/code&gt; هستید و می‌خواهید آن را به‌روز کنید:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git switch feature
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git rebase main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;گیت کامیت‌های برنچ &lt;code&gt;feature&lt;/code&gt; را برمی‌دارد و آن‌ها را یکی‌یکی روی آخرین نقطه‌ی &lt;code&gt;main&lt;/code&gt; اعمال می‌کند.&lt;/p&gt;
+&lt;h2 id="merge-در-مقابل-rebase"&gt;merge در مقابل rebase&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;merge:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>چری‌پیک</title><link>https://dariubs.github.io/git/book/21.cherry-pick/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/21.cherry-pick/</guid><description>&lt;p&gt;&lt;code&gt;cherry-pick&lt;/code&gt; به شما اجازه می‌دهد یک کامیت خاص از یک برنچ دیگر را به برنچ فعلی اضافه کنید، بدون اینکه تمام برنچ را merge کنید.&lt;/p&gt;
+&lt;h2 id="کاربرد"&gt;کاربرد&lt;/h2&gt;
+&lt;p&gt;فرض کنید روی برنچ &lt;code&gt;main&lt;/code&gt; هستید و یک باگ‌فیکس خاص در برنچ &lt;code&gt;feature&lt;/code&gt; وجود دارد که می‌خواهید همین الان اعمال کنید:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git cherry-pick هش‌کامیت
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;هش کامیت را می‌توانید با دستور &lt;code&gt;git log&lt;/code&gt; پیدا کنید.&lt;/p&gt;
+&lt;h2 id="چریپیک-چند-کامیت"&gt;چری‌پیک چند کامیت&lt;/h2&gt;
+&lt;p&gt;برای اعمال چند کامیت به‌صورت جداگانه:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git cherry-pick هش‌اول هش‌دوم هش‌سوم
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;برای اعمال یک بازه از کامیت‌ها:&lt;/p&gt;</description></item><item><title>پیدا کردن مسئول تغییرات</title><link>https://dariubs.github.io/git/book/22.blame/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/22.blame/</guid><description>&lt;p&gt;وقتی با یک باگ یا رفتار عجیب در کد روبرو می‌شوید، معمولاً اولین سوال این است: «چه کسی و چه زمانی این خط را نوشته؟» گیت ابزارهایی برای این کار دارد.&lt;/p&gt;
+&lt;h2 id="git-blame"&gt;git blame&lt;/h2&gt;
+&lt;p&gt;دستور &lt;code&gt;blame&lt;/code&gt; هر خط یک فایل را به همراه نام نویسنده و کامیتی که آن خط را آخرین بار تغییر داده نشان می‌دهد:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git blame نام‌فایل
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;خروجی شبیه به این است:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;a1b2c3d (علی محمدی 2024-03-15 10:22:31 +0330 1) function login() {
+e4f5g6h (سارا احمدی 2024-03-20 14:10:05 +0330 2) if (!user) return;
+a1b2c3d (علی محمدی 2024-03-15 10:22:31 +0330 3) }
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="blame-روی-بازهای-از-خطوط"&gt;blame روی بازه‌ای از خطوط&lt;/h2&gt;
+&lt;p&gt;برای بررسی فقط چند خط خاص (مثلاً خطوط ۱۰ تا ۲۵):&lt;/p&gt;</description></item><item><title>ترفندهای گیت</title><link>https://dariubs.github.io/git/book/18.tricks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/18.tricks/</guid><description>&lt;h2 id="آناستیج-کردن-فایلها"&gt;آن‌استیج کردن فایل‌ها&lt;/h2&gt;
+&lt;p&gt;برای خارج‌کردن یک فایل از staging بدون از دست دادن تغییرات:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git restore --staged نام‌فایل
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="مشاهدهی-reflog"&gt;مشاهده‌ی reflog&lt;/h2&gt;
+&lt;p&gt;گیت تمام تغییرات HEAD را حتی بعد از reset در یک لیست داخلی نگه می‌دارد. اگر اشتباهاً یک کامیت را پاک کردید، &lt;code&gt;reflog&lt;/code&gt; آن را پیدا می‌کند:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git reflog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;با هش کامیت پیدا شده می‌توانید آن را بازیابی کنید:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout هش‌کامیت
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="لاگ-تمیز-و-رنگی"&gt;لاگ تمیز و رنگی&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git log --graph --pretty&lt;span style="color:#ff79c6"&gt;=&lt;/span&gt;format:&lt;span style="color:#f1fa8c"&gt;&amp;#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Creset&amp;#39;&lt;/span&gt; --abbrev-commit
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;برای آسان‌تر شدن، یک alias بسازید:&lt;/p&gt;</description></item><item><title>ضمیمه ۱ — آشنایی با خط فرمان</title><link>https://dariubs.github.io/git/book/appendix01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dariubs.github.io/git/book/appendix01/</guid><description>&lt;p&gt;امروزه متداول‌ترین روش تعامل با سیستم‌عامل استفاده از واسط‌های گرافیکی است اما از ابتدای عصر کامپیوترهای دیجیتالی روش دیگری نیز بین کاربران متداول بود تحت عناوینی چون &amp;ldquo;محیط متنی&amp;rdquo; یا &amp;ldquo;واسط خط فرمان&amp;rdquo;. نرم‌افزارهای این محیط در سیستم‌های عامل مختلف با نام‌هایی چون ترمینال، کنسول، cmd، tty و&amp;hellip; خطاب می‌شوند.&lt;/p&gt;
 &lt;p&gt;در ترمینال‌ها دستوراتی تایپ و اجرا می‌شوند. بسیاری از کارهایی که در محیط‌های گرافیکی قابل انجام بودند اینجا هم به همان سادگی انجام می‌شود.&lt;/p&gt;</description></item></channel></rss>

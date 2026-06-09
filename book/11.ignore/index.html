@@ -1,4 +1,4 @@
-<!doctype html><html lang=fa dir=rtl><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>ignore — راهنمای گیت</title><meta name=description content="کتاب فارسی آموزش گیت"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel=stylesheet><link rel=stylesheet href=/git/css/main.css><script>try{(localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches)&&document.documentElement.classList.add("dark")}catch{}</script></head><body class="bg-white dark:bg-zinc-950 min-h-screen"><header class="lg:hidden fixed top-0 inset-x-0 z-30 h-14
+<!doctype html><html lang=fa dir=rtl><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>نادیده‌گرفتن فایل‌ها — راهنمای گیت</title><meta name=description content="کتاب فارسی آموزش گیت"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel=stylesheet><link rel=stylesheet href=/git/css/main.css><script>try{(localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches)&&document.documentElement.classList.add("dark")}catch{}</script></head><body class="bg-white dark:bg-zinc-950 min-h-screen"><header class="lg:hidden fixed top-0 inset-x-0 z-30 h-14
 flex items-center justify-between px-4
 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-sm
 border-b border-zinc-200 dark:border-zinc-800"><button id=mob-menu-btn aria-label=منو class="p-2 rounded-lg text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200
@@ -21,25 +21,53 @@ hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">راهنما
 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors">
 <svg class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003.0 0012 21a9.003 9.003.0 008.354-5.646z"/></svg>
 <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364-.707-.707M6.343 6.343l-.707-.707m12.728.0-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button></div><nav class="flex-1 overflow-y-auto py-4 px-3"><p class="text-[10px] font-semibold uppercase tracking-widest
-text-zinc-400 dark:text-zinc-500 px-3 mb-3">فصل‌ها</p><ul class=space-y-0.5><li><a href=/git/book/01.whatis/ class=nav-link>مدیریت کدمنبع</a></li><li><a href=/git/book/02.install/ class=nav-link>نصب گیت</a></li><li><a href=/git/book/03.config/ class=nav-link>پیکربندی</a></li><li><a href=/git/book/04.init/ class=nav-link>شروع یک پروژه با گیت</a></li><li><a href=/git/book/05.status/ class=nav-link>وضعیت مخزن</a></li><li><a href=/git/book/06.add/ class=nav-link>اضافه‌کردن فایل‌ها</a></li><li><a href=/git/book/07.commit/ class=nav-link>ثبت تغییرات</a></li><li><a href=/git/book/08.rm/ class=nav-link>حذف فایل‌ها</a></li><li><a href=/git/book/09.diff/ class=nav-link>مقایسه‌ی تغییرات</a></li><li><a href=/git/book/10.log/ class=nav-link>لاگ</a></li><li><a href=/git/book/11.ignore/ class="nav-link active">ignore</a></li><li><a href=/git/book/12.branch/ class=nav-link>برنچ‌ها</a></li><li><a href=/git/book/13.merge/ class=nav-link>ترکیب برنچ‌ها</a></li><li><a href=/git/book/14.remote/ class=nav-link>استفاده از ریموت</a></li><li><a href=/git/book/15.revert-changes/ class=nav-link>بازگردانی تغییرات</a></li><li><a href=/git/book/16.gitrepohosts/ class=nav-link>سرویس‌های میزبانی مخازن گیت</a></li><li><a href=/git/book/17.tag/ class=nav-link>تگ‌ها</a></li><li><a href=/git/book/18.tricks/ class=nav-link>ترفندهای گیت</a></li><li><a href=/git/book/appendix01/ class=nav-link>ضمیمه ۱ — آشنایی با خط فرمان</a></li></ul></nav><div class="shrink-0 px-4 py-3 border-t border-zinc-200 dark:border-zinc-800"><a href=https://github.com/dariubs/git target=_blank rel="noopener noreferrer" class="flex items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500
+text-zinc-400 dark:text-zinc-500 px-3 mb-3">فصل‌ها</p><ul class=space-y-0.5><li><a href=/git/book/01.whatis/ class=nav-link>مدیریت کدمنبع</a></li><li><a href=/git/book/02.install/ class=nav-link>نصب گیت</a></li><li><a href=/git/book/03.config/ class=nav-link>پیکربندی</a></li><li><a href=/git/book/04.init/ class=nav-link>شروع یک پروژه با گیت</a></li><li><a href=/git/book/04b.clone/ class=nav-link>کلون‌کردن یک مخزن</a></li><li><a href=/git/book/05.status/ class=nav-link>وضعیت مخزن</a></li><li><a href=/git/book/06.add/ class=nav-link>اضافه‌کردن فایل‌ها</a></li><li><a href=/git/book/07.commit/ class=nav-link>ثبت تغییرات</a></li><li><a href=/git/book/08.rm/ class=nav-link>حذف فایل‌ها</a></li><li><a href=/git/book/09.diff/ class=nav-link>مقایسه‌ی تغییرات</a></li><li><a href=/git/book/10.log/ class=nav-link>لاگ</a></li><li><a href=/git/book/11.ignore/ class="nav-link active">نادیده‌گرفتن فایل‌ها</a></li><li><a href=/git/book/12.branch/ class=nav-link>برنچ‌ها</a></li><li><a href=/git/book/13.merge/ class=nav-link>ترکیب برنچ‌ها</a></li><li><a href=/git/book/14.remote/ class=nav-link>استفاده از ریموت</a></li><li><a href=/git/book/15.revert-changes/ class=nav-link>بازگردانی تغییرات</a></li><li><a href=/git/book/16.gitrepohosts/ class=nav-link>سرویس‌های میزبانی مخازن گیت</a></li><li><a href=/git/book/17.tag/ class=nav-link>تگ‌ها</a></li><li><a href=/git/book/19.stash/ class=nav-link>استش</a></li><li><a href=/git/book/20.rebase/ class=nav-link>ریبیس</a></li><li><a href=/git/book/21.cherry-pick/ class=nav-link>چری‌پیک</a></li><li><a href=/git/book/22.blame/ class=nav-link>پیدا کردن مسئول تغییرات</a></li><li><a href=/git/book/18.tricks/ class=nav-link>ترفندهای گیت</a></li><li><a href=/git/book/appendix01/ class=nav-link>ضمیمه ۱ — آشنایی با خط فرمان</a></li></ul></nav><div class="shrink-0 px-4 py-3 border-t border-zinc-200 dark:border-zinc-800"><a href=https://github.com/dariubs/git target=_blank rel="noopener noreferrer" class="flex items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500
 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"><svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483.0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951.0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65.0.0.84-.27 2.75 1.026A9.564 9.564.0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688.0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855.0 1.338-.012 2.419-.012 2.747.0.268.18.58.688.482A10.019 10.019.0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-مشارکت در گیت‌هاب</a></div></aside><div class="lg:mr-64 flex flex-col min-h-screen pt-14 lg:pt-0"><main class="flex-1 flex flex-col"><article class="flex-1 w-full max-w-2xl mx-auto px-6 py-12 lg:py-16"><div class=prose><h1>ignore</h1><p>ممکن است در دایرکتوری پروژه فایل‌هایی داشته باشید که نخواهید گیت آن‌ها را در وضعیت نشان دهد و نخواهید در مخزن اضافه شوند. برای این کار باید در دایرکتوری پروژه یک فایل به نام <code>.gitignore</code> بسازید و در آن لیست فایل‌ها و دایرکتوری‌هایی را که گیت باید نادیده بگیرد بنویسید.</p><p>برای مثال:</p><pre tabindex=0><code># Distribution / packaging
-.Python
-env/
+مشارکت در گیت‌هاب</a></div></aside><div class="lg:mr-64 flex flex-col min-h-screen pt-14 lg:pt-0"><main class="flex-1 flex flex-col"><article class="flex-1 w-full max-w-2xl mx-auto px-6 py-12 lg:py-16"><div class=prose><h1>نادیده‌گرفتن فایل‌ها</h1><p>ممکن است در دایرکتوری پروژه فایل‌هایی داشته باشید که نخواهید گیت آن‌ها را ردیابی کند؛ مثل فایل‌های تنظیمات محلی، وابستگی‌های نصب‌شده یا فایل‌های ساخته‌شده توسط کامپایلر. برای این کار باید در دایرکتوری پروژه یک فایل به نام <code>.gitignore</code> بسازید.</p><h2 id=ساختار-فایل-gitignore>ساختار فایل .gitignore</h2><pre tabindex=0><code># این خط کامنت است و نادیده گرفته می‌شود
+
+# نادیده‌گرفتن یک فایل خاص
+secret.txt
+
+# نادیده‌گرفتن تمام فایل‌های با پسوند .log
+*.log
+
+# نادیده‌گرفتن یک دایرکتوری
+node_modules/
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
+
+# نادیده‌گرفتن یک فایل در یک دایرکتوری مشخص
+config/database.yml
+
+# نادیده‌گرفتن تمام فایل‌های .txt در هر جای پروژه
+**/*.txt
+</code></pre><h2 id=قوانین-الگو>قوانین الگو</h2><table><thead><tr><th>الگو</th><th>توضیح</th></tr></thead><tbody><tr><td><code>*.log</code></td><td>تمام فایل‌های با پسوند .log</td></tr><tr><td><code>build/</code></td><td>دایرکتوری build و تمام محتویات آن</td></tr><tr><td><code>doc/*.txt</code></td><td>فایل‌های .txt فقط در دایرکتوری doc</td></tr><tr><td><code>**/logs</code></td><td>دایرکتوری logs در هر جای پروژه</td></tr><tr><td><code>!important.log</code></td><td>این فایل را <strong>نادیده نگیر</strong> (استثنا)</td></tr></tbody></table><h2 id=نمونه-برای-پروژههای-مختلف>نمونه برای پروژه‌های مختلف</h2><p>برای پروژه‌های Python:</p><pre tabindex=0><code>__pycache__/
+*.py[cod]
 *.egg-info/
-.installed.cfg
-*.egg
-</code></pre><p>لیستی از فایل‌ها و دایرکتوری‌هاست که گیت بعد از ساخته شدن فایل <code>.gitignore</code> نادیده می‌گیرد.</p><p>توجه کنید که:</p><ul><li>خود فایل <code>.gitignore</code> باید توسط دستور <code>add</code> به پروژه اضافه و کامیت شود.</li><li>خطوطی که با <code>#</code> شروع می‌شوند به عنوان کامنت در نظر گرفته می‌شوند.</li></ul></div><nav class="mt-16 pt-8 border-t border-zinc-200 dark:border-zinc-700
+dist/
+build/
+.env
+venv/
+</code></pre><p>برای پروژه‌های Node.js:</p><pre tabindex=0><code>node_modules/
+npm-debug.log
+.env
+dist/
+</code></pre><h2 id=gitignore-سراسری>gitignore سراسری</h2><p>می‌توانید یک فایل <code>.gitignore</code> سراسری برای تمام پروژه‌هایتان تعریف کنید:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>git config --global core.excludesfile ~/.gitignore_global
+</span></span></code></pre></div><p>سپس فایل <code>~/.gitignore_global</code> را بسازید و الگوهایی مثل فایل‌های سیستم‌عامل را در آن بنویسید:</p><pre tabindex=0><code># macOS
+.DS_Store
+.AppleDouble
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# ویرایشگرها
+.idea/
+.vscode/
+*.swp
+</code></pre><h2 id=بررسی-اینکه-چرا-یک-فایل-نادیده-گرفته-میشود>بررسی اینکه چرا یک فایل نادیده گرفته می‌شود</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>git check-ignore -v نام‌فایل
+</span></span></code></pre></div><p>این دستور نشان می‌دهد کدام قانون در <code>.gitignore</code> باعث نادیده‌گرفتن آن فایل شده است.</p><h2 id=نادیدهگرفتن-فایلهایی-که-قبلا-ثبت-شدهاند>نادیده‌گرفتن فایل‌هایی که قبلاً ثبت شده‌اند</h2><p>اگر فایلی قبلاً در گیت ثبت شده باشد، اضافه‌کردن آن به <code>.gitignore</code> کافی نیست و باید ابتدا از ردیابی گیت خارج شود:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>git rm --cached نام‌فایل
+</span></span></code></pre></div><h2 id=نکتهها>نکته‌ها</h2><ul><li>خود فایل <code>.gitignore</code> باید توسط دستور <code>add</code> به پروژه اضافه و کامیت شود.</li><li>خطوطی که با <code>#</code> شروع می‌شوند به عنوان کامنت در نظر گرفته می‌شوند.</li><li>برای نمونه‌های آماده برای زبان‌ها و فریم‌ورک‌های مختلف، به وبسایت <a href=https://www.toptal.com/developers/gitignore>gitignore.io</a> مراجعه کنید.</li></ul></div><nav class="mt-16 pt-8 border-t border-zinc-200 dark:border-zinc-700
 flex justify-between gap-4"><div class=flex-1><a href=/git/book/12.branch/ class="group flex flex-col gap-1 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800
 hover:border-indigo-300 dark:hover:border-indigo-700
 hover:bg-indigo-50/50 dark:hover:bg-indigo-950/30 transition-all"><span class="text-xs text-zinc-400 dark:text-zinc-500 flex items-center gap-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
