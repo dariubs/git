@@ -2,6 +2,10 @@
   "name": "git-book-fa",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i assets/css/main.css -o static/css/main.css --minify",
+    "dev:css": "tailwindcss -i assets/css/main.css -o static/css/main.css --watch"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.0",
     "autoprefixer": "^10.4.0",

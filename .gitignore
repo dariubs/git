@@ -4,3 +4,4 @@ node_modules/
 public/
 resources/
 .hugo_build.lock
+static/css/main.css
