@@ -1,0 +1,87 @@
+{{ define "main" }}
+<main class="flex-1 flex flex-col">
+  <div class="flex-1 w-full max-w-2xl mx-auto px-6 py-16 lg:py-24">
+
+    {{/* ── Hero ── */}}
+    <div class="mb-16">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 mb-6 rounded-full
+                  bg-indigo-50 dark:bg-indigo-950/60
+                  text-indigo-600 dark:text-indigo-400 text-xs font-medium
+                  border border-indigo-200 dark:border-indigo-800">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+        </svg>
+        کتاب آموزشی
+      </div>
+
+      <h1 class="text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-zinc-50
+                 leading-tight mb-5 tracking-tight">
+        {{ .Site.Title }}
+      </h1>
+
+      <p class="text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed mb-8 max-w-lg">
+        {{ .Site.Params.description }}
+      </p>
+
+      <div class="flex items-center gap-3 text-sm text-zinc-500 dark:text-zinc-400">
+        <span>نوشته‌ی</span>
+        <a href="{{ .Site.Params.authorURL }}"
+           class="font-semibold text-zinc-700 dark:text-zinc-300
+                  hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          {{ .Site.Params.author }}
+        </a>
+        <span class="text-zinc-300 dark:text-zinc-600">·</span>
+        <a href="{{ .Site.Params.github }}/graphs/contributors" target="_blank" rel="noopener"
+           class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          مشارکت‌کنندگان
+        </a>
+      </div>
+    </div>
+
+    {{/* ── Chapter list ── */}}
+    <div>
+      <p class="text-[11px] font-semibold uppercase tracking-widest
+                text-zinc-400 dark:text-zinc-500 mb-4">فهرست مطالب</p>
+
+      <ul class="space-y-1.5">
+        {{ range (.Site.GetPage "section" "book").Pages.ByWeight }}
+        {{ $n := .Weight }}
+        <li>
+          <a href="{{ .RelPermalink }}"
+             class="flex items-center gap-4 px-4 py-3.5 rounded-xl
+                    border border-zinc-200 dark:border-zinc-800/80
+                    hover:border-indigo-300 dark:hover:border-indigo-700
+                    hover:bg-indigo-50/60 dark:hover:bg-indigo-950/30 group transition-all">
+            <span class="shrink-0 w-7 h-7 flex items-center justify-center rounded-lg
+                         bg-zinc-100 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-500
+                         group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/60
+                         group-hover:text-indigo-600 dark:group-hover:text-indigo-400
+                         text-xs font-mono transition-colors">
+              {{ printf "%02d" $n }}
+            </span>
+            <span class="flex-1 font-medium text-zinc-700 dark:text-zinc-300
+                         group-hover:text-indigo-700 dark:group-hover:text-indigo-300 transition-colors">
+              {{ .Title }}
+            </span>
+            <svg class="shrink-0 w-4 h-4 text-zinc-300 dark:text-zinc-600
+                        group-hover:text-indigo-400 dark:group-hover:text-indigo-500
+                        transition-colors"
+                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+  <footer class="w-full max-w-2xl mx-auto px-6 py-6
+                 border-t border-zinc-100 dark:border-zinc-800/60
+                 text-xs text-zinc-400 dark:text-zinc-500 flex items-center justify-between">
+    <span>© {{ .Site.Params.author }}</span>
+    <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener"
+       class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">گیت‌هاب</a>
+  </footer>
+</main>
+{{ end }}

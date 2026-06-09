@@ -1,0 +1,9 @@
+name = "gitbook-fa"
+license = "MIT"
+licenselink = "https://github.com/dariubs/git"
+description = "Custom RTL Hugo theme for git-book-fa"
+homepage = "https://github.com/dariubs/git"
+min_version = "0.112.0"
+
+[author]
+  name = "Dariush Abbasi"

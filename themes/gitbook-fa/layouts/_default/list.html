@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main class="flex-1 w-full max-w-2xl mx-auto px-6 py-12 lg:py-16">
+  <h1 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-8">{{ .Title }}</h1>
+  <ul class="space-y-2">
+    {{ range .Pages.ByWeight }}
+    <li>
+      <a href="{{ .RelPermalink }}"
+         class="flex items-center justify-between p-4 rounded-xl
+                border border-zinc-200 dark:border-zinc-800
+                hover:border-indigo-300 dark:hover:border-indigo-700
+                hover:bg-indigo-50 dark:hover:bg-indigo-950/30 group transition-all">
+        <span class="font-medium text-zinc-800 dark:text-zinc-200
+                     group-hover:text-indigo-700 dark:group-hover:text-indigo-300 transition-colors">
+          {{ .Title }}
+        </span>
+        <svg class="w-4 h-4 text-zinc-300 dark:text-zinc-600 group-hover:text-indigo-400 transition-colors"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

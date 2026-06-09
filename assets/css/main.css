@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 antialiased;
+    font-family: 'Vazirmatn', system-ui, sans-serif;
+  }
+
+  ::selection {
+    @apply bg-indigo-100 dark:bg-indigo-900;
+  }
+}
+
+@layer components {
+  /* ─── Sidebar navigation links ─── */
+  .nav-link {
+    @apply flex items-center px-3 py-2 text-sm rounded-lg text-zinc-600 dark:text-zinc-400
+           hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-200/60 dark:hover:bg-zinc-800
+           transition-colors duration-150;
+  }
+
+  .nav-link.active {
+    @apply text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/60 font-medium;
+  }
+
+  /* ─── Prose (main book content) ─── */
+  .prose {
+    @apply text-zinc-700 dark:text-zinc-300;
+    font-size: 1.0625rem;
+    line-height: 1.9;
+  }
+
+  .prose h1 {
+    @apply text-3xl font-bold text-zinc-900 dark:text-zinc-50 mb-8 mt-0 leading-tight;
+  }
+
+  .prose h2 {
+    @apply text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-4 mt-12 pb-3
+           border-b border-zinc-200 dark:border-zinc-700/60;
+  }
+
+  .prose h3 {
+    @apply text-lg font-semibold text-zinc-800 dark:text-zinc-200 mb-3 mt-8;
+  }
+
+  .prose p {
+    @apply mb-5;
+  }
+
+  .prose ul {
+    @apply mb-5 space-y-2;
+    padding-right: 1.5rem;
+    list-style-type: disc;
+  }
+
+  .prose ol {
+    @apply mb-5 space-y-2;
+    padding-right: 1.5rem;
+    list-style-type: decimal;
+  }
+
+  .prose li {
+    @apply text-zinc-700 dark:text-zinc-300 leading-relaxed;
+  }
+
+  .prose a {
+    @apply text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-200
+           underline underline-offset-2 decoration-indigo-300 dark:decoration-indigo-700
+           hover:decoration-indigo-500 transition-colors;
+  }
+
+  .prose strong {
+    @apply font-semibold text-zinc-900 dark:text-zinc-100;
+  }
+
+  .prose em {
+    @apply italic;
+  }
+
+  .prose blockquote {
+    @apply my-6 pr-4 text-zinc-500 dark:text-zinc-400 italic;
+    border-right: 3px solid theme('colors.indigo.300');
+    border-left: none;
+  }
+
+  .prose hr {
+    @apply border-zinc-200 dark:border-zinc-700 my-10;
+  }
+
+  .prose img {
+    @apply rounded-xl my-6 mx-auto max-w-full;
+  }
+
+  /* Inline code */
+  .prose code:not(pre code) {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    @apply text-sm bg-zinc-100 dark:bg-zinc-800/80 text-zinc-800 dark:text-zinc-200
+           px-1.5 py-0.5 rounded;
+    direction: ltr;
+    display: inline-block;
+    unicode-bidi: bidi-override;
+  }
+
+  /* Code blocks (Chroma wraps in .highlight > pre) */
+  .prose .highlight {
+    @apply rounded-xl overflow-hidden mb-6;
+  }
+
+  .prose .highlight pre {
+    direction: ltr;
+    text-align: left;
+    @apply p-5 overflow-x-auto m-0;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 0.875rem;
+    line-height: 1.65;
+  }
+
+  /* Fallback for bare pre/code (no Chroma) */
+  .prose pre:not(.highlight pre) {
+    direction: ltr;
+    text-align: left;
+    @apply bg-zinc-900 dark:bg-zinc-950 rounded-xl p-5 overflow-x-auto mb-6;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 0.875rem;
+    line-height: 1.65;
+  }
+
+  .prose pre code {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    @apply bg-transparent text-inherit p-0;
+    direction: ltr;
+    font-size: inherit;
+  }
+
+  /* Table */
+  .prose table {
+    @apply w-full text-sm mb-6 border-collapse;
+  }
+
+  .prose thead {
+    @apply border-b-2 border-zinc-200 dark:border-zinc-700;
+  }
+
+  .prose th {
+    @apply text-right font-semibold text-zinc-700 dark:text-zinc-300 px-4 py-2;
+  }
+
+  .prose td {
+    @apply text-right px-4 py-2 border-b border-zinc-100 dark:border-zinc-800;
+  }
+}

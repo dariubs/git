@@ -1,0 +1,26 @@
+baseURL = "https://dariubs.github.io/git/"
+locale = "fa"
+defaultContentLanguage = "fa"
+title = "راهنمای گیت"
+theme = "gitbook-fa"
+
+[params]
+  description = "کتاب فارسی آموزش گیت"
+  author = "داریوش عباسی"
+  authorURL = "https://dariush.in"
+  github = "https://github.com/dariubs/git"
+
+[markup]
+  [markup.highlight]
+    noClasses = true
+    style = "dracula"
+    lineNos = false
+    codeFences = true
+    tabWidth = 2
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[build]
+  [build.buildStats]
+    enable = true
